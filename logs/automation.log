@@ -1,0 +1,40 @@
+17:21:22.627 [main] DEBUG - Save package relationships
+17:21:22.646 [main] DEBUG - Save part 'docProps/app.xml'
+17:21:22.646 [main] DEBUG - Save part 'docProps/core.xml'
+17:21:22.649 [main] DEBUG - Save part 'xl/sharedStrings.xml'
+17:21:22.650 [main] DEBUG - Save part 'xl/styles.xml'
+17:21:22.651 [main] DEBUG - Save part 'xl/theme/theme1.xml'
+17:21:22.652 [main] DEBUG - Save part 'xl/workbook.xml'
+17:21:22.655 [main] DEBUG - Save part 'xl/worksheets/sheet1.xml'
+17:21:22.656 [main] DEBUG - Save part 'xl/worksheets/sheet2.xml'
+17:21:22.656 [main] DEBUG - Save part 'xl/worksheets/sheet3.xml'
+17:21:22.667 [main] DEBUG - Save part 'xl/worksheets/sheet4.xml'
+17:21:22.721 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:21:22.723 [main] DEBUG - Parsing relationship: /_rels/.rels
+17:21:22.769 [main] DEBUG - Save content types part
+17:21:22.772 [main] DEBUG - Save package relationships
+17:21:22.775 [main] DEBUG - Save part 'docProps/app.xml'
+17:21:22.776 [main] DEBUG - Save part 'docProps/core.xml'
+17:21:22.779 [main] DEBUG - Save part 'xl/sharedStrings.xml'
+17:21:22.779 [main] DEBUG - Save part 'xl/styles.xml'
+17:21:22.780 [main] DEBUG - Save part 'xl/theme/theme1.xml'
+17:21:22.781 [main] DEBUG - Save part 'xl/workbook.xml'
+17:21:22.784 [main] DEBUG - Save part 'xl/worksheets/sheet1.xml'
+17:21:22.785 [main] DEBUG - Save part 'xl/worksheets/sheet2.xml'
+17:21:22.786 [main] DEBUG - Save part 'xl/worksheets/sheet3.xml'
+17:21:22.786 [main] DEBUG - Save part 'xl/worksheets/sheet4.xml'
+17:21:22.879 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:21:22.881 [main] DEBUG - Parsing relationship: /_rels/.rels
+17:21:22.935 [main] DEBUG - Save content types part
+17:21:22.938 [main] DEBUG - Save package relationships
+17:21:22.940 [main] DEBUG - Save part 'docProps/app.xml'
+17:21:22.941 [main] DEBUG - Save part 'docProps/core.xml'
+17:21:22.944 [main] DEBUG - Save part 'xl/sharedStrings.xml'
+17:21:22.944 [main] DEBUG - Save part 'xl/styles.xml'
+17:21:22.945 [main] DEBUG - Save part 'xl/theme/theme1.xml'
+17:21:22.946 [main] DEBUG - Save part 'xl/workbook.xml'
+17:21:22.949 [main] DEBUG - Save part 'xl/worksheets/sheet1.xml'
+17:21:22.949 [main] DEBUG - Save part 'xl/worksheets/sheet2.xml'
+17:21:22.950 [main] DEBUG - Save part 'xl/worksheets/sheet3.xml'
+17:21:22.950 [main] DEBUG - Save part 'xl/worksheets/sheet4.xml'
+17:21:22.952 [main] INFO  - **** Finished TC_002_UsedCar ****
