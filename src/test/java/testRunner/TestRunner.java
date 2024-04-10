@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 //@CucumberOptions(features ={".//Features/Usedcars.feature"},glue = {"stepDefinitions"},
 //@CucumberOptions(features ={".//Features/GoogleSignIn.feature"},glue = {"stepDefinitions"},
 //@CucumberOptions(features ={".//Features/hoverNewBikes.feature"},glue = {"stepDefinitions"},
-@CucumberOptions(features ={".//Features/Usedcars.feature"},glue = {"stepDefinitions"},
+@CucumberOptions(features ={".//Features/"},glue = {"stepDefinitions"},
 //monochrome= true,
 //plugin = {"pretty", "html:target/reports"},
 //plugin= {"pretty", "json:target/reports/cucumber.json"},
