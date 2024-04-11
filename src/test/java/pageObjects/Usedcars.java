@@ -52,6 +52,7 @@ public class Usedcars extends BasePage {
 
 	public void selectChennaiUsedCars() throws IOException {
 		new BaseClass().screenshot("UsedCarLocation");
+		explicitWait(chennaiUsedCars);
 		chennaiUsedCars.click();
 
 	}
