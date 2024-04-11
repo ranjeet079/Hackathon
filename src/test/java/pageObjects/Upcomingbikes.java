@@ -1,19 +1,14 @@
 package pageObjects;
 
-//import java.io.File;
+
 import java.io.IOException;
 import java.util.List;
-
-//import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
-//import org.openqa.selenium.OutputType;
-//import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-
 import utilities.ExcelUtils;
 import factory.BaseClass;
 
@@ -24,7 +19,7 @@ public class Upcomingbikes extends BasePage {
 	
 	public Upcomingbikes(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	
@@ -45,30 +40,20 @@ public class Upcomingbikes extends BasePage {
 	@FindBy(xpath="//h1[normalize-space()='Honda Upcoming Bikes in India' ]")
 	public WebElement HondaPageTitle;
 	
-    @FindBy(xpath = "//span[@class='zw-cmn-loadMore']") ////*[@id="div-gpt-ad-1558070816143-0"]
-	//span[normalize-space()='View More Bikes']
-//	@FindBy(xpath = "//span[normalize-space()='View More Bikes']")
+    @FindBy(xpath = "//span[@class='zw-cmn-loadMore']")
 	public WebElement viewMoreBikesButton;
 	
-	//@FindBy(xpath = "//*[@id=\"div-gpt-ad-1529569826071-3\"]")
-	//public WebElement ScrollTop;
 	
 	@FindBy(xpath="//li/div[@class='zw-con p-0 sl-card']")
     public List<WebElement> allHondaBikes;
     
     @FindBy(css = ".lnk-hvr.block.of-hid.h-height")
-	//strong[@class="lnk-hvr block of-hid h-height"]
-	
-//	@FindBy(xpath= "//strong[@class='lnk-hvr block of-hid h-height']")
     public List<WebElement> modelName;
 	
     @FindBy(xpath = "//li[contains(@class,'modelItem')]")
-//	@FindBy(xpath = "//div[@class=\"b fnt-15\"]")
     public List<WebElement> bikePrice;
 	
     @FindBy(css = ".clr-try.fnt-14")
-	//div[@class="clr-try fnt-14"]
-//	@FindBy(xpath="//div[@class='clr-try fnt-14']")
 	public List<WebElement> dateOfBikes;
 	
 	
@@ -76,7 +61,7 @@ public class Upcomingbikes extends BasePage {
 	public void HoverNewBikes() throws InterruptedException {
 		Actions action = new Actions(driver);
 		action.moveToElement(NewBikes).perform();
-//		Thread.sleep(3000);
+
 	}
 	
 	//click upcoming bikes
@@ -96,7 +81,6 @@ public class Upcomingbikes extends BasePage {
 	
 	//Handling Dropdown
 	public void selectBrand() {
-//		Brand.click();
 		Select s=new Select(Brand);
 		s.selectByVisibleText("Honda");
 	}
@@ -106,10 +90,7 @@ public class Upcomingbikes extends BasePage {
 
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
-			//executor.executeScript("arguments[0].scrollIntoView(true);", viewMoreBikesButton);
 			executor.executeScript("arguments[0].click();", viewMoreBikesButton);
-//			Thread.sleep(2000);
-			//executor.executeScript("arguments[0].scrollIntoView(true);", ScrollTop);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -138,10 +119,5 @@ public class Upcomingbikes extends BasePage {
 		}
 		
 		
-			
-		
-		//Thread.sleep(9000);
-		//JavascriptExecutor executor = (JavascriptExecutor) driver;
-		//executor.executeScript("arguments[0].scrollIntoView(true);", ScrollTop);
 	}
 }

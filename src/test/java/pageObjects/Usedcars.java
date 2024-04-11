@@ -12,23 +12,20 @@ import org.openqa.selenium.support.FindBy;
 import utilities.ExcelUtils;
 import factory.BaseClass;
 
-//import baseClass.BaseClass;
+
 
 public class Usedcars extends BasePage {
 	ExcelUtils Eu = new ExcelUtils();
 
 	public Usedcars(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+	
 	}
 
-	/*
-	 * public UsedCars(WebDriver driver) { super(driver); }
-	 */
+	
 
 	@FindBy(xpath = "//a[normalize-space()='Used Cars']")
-	public
-	WebElement usedCarsMenu;
+	public WebElement usedCarsMenu;
 
 	@FindBy(xpath = "//li/span[text()='Chennai']")
 	
@@ -38,14 +35,13 @@ public class Usedcars extends BasePage {
 	@FindBy(xpath = "//ul[@class=\"zw-sr-secLev usedCarMakeModelList popularModels ml-20 mt-10\"]/li/label")
 	List<WebElement> checkboxOfCars;
 
-//	@FindBy(xpath = "//span[normalize-space()='Brand and Model']")
+
 	@FindBy(xpath = "//div[@class='zm-cmn-colorBlack ml-30 mob-nonclick div-h3 mt-20 mb-10']")
 	
 	WebElement BrandAndModel;
 	
 	@FindBy(xpath="//img[@alt='ZigWheels - New Cars, Used Cars, Bikes Prices, News, Reviews, QnA']")
-	public
-			WebElement logo;
+	public WebElement logo;
 
 	public void usedCarsMenu() {
 
@@ -67,7 +63,7 @@ public class Usedcars extends BasePage {
 		explicitWait(BrandAndModel);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", BrandAndModel);
-//		Thread.sleep(2000);
+
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {

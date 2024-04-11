@@ -16,7 +16,6 @@ import factory.BaseClass;
 public class step2_UsedCars extends BaseClass{
     private Usedcars usedCar;
     Logger logger=LogManager.getLogger(step2_UsedCars.class);
-//    WebDriverWait m = new WebDriverWait(driver,DurationOfSeconds())
     
     @Given("I am on the homepage")
     public void i_am_on_the_homepage() {
@@ -33,8 +32,6 @@ public class step2_UsedCars extends BaseClass{
     @When("Zigwheels logo is visible or not")
     public void logo() throws InterruptedException {
     	logger.info("checking zigwheels visibility");
-//    	Thread.sleep(5000);
-//    	Assert.assertTrue(usedCar.logo.isDisplayed(), "Element is not visible.");
     	if (usedCar.logo.isDisplayed()) {
 
 			Assert.assertTrue(true);
@@ -48,8 +45,6 @@ public class step2_UsedCars extends BaseClass{
     @Then("used cars option is visible or not")
     public void usedCars() throws InterruptedException {
     	logger.info("checking used cars option visibility");
-//    	Thread.sleep(5000);
-//    	Assert.assertTrue(usedCar.usedCarsMenu.isDisplayed(), "Element is not visible.");
     	if (usedCar.usedCarsMenu.isDisplayed()) {
 
 			Assert.assertTrue(true);
@@ -63,7 +58,6 @@ public class step2_UsedCars extends BaseClass{
     public void i_hover_over_and_select_used_cars() {
         try {
             logger.info("Hovering over and selecting used cars");
-//            Thread.sleep(6000);
             usedCar.usedCarsMenu();
             
         } catch (Exception e) {
@@ -76,8 +70,6 @@ public class step2_UsedCars extends BaseClass{
     @Then("Chennai option is visible or not")
     public void viewMoreButton() throws InterruptedException {
     	logger.info("checking Chennai option visibility");
-//    	Thread.sleep(6000);
-//    	Assert.assertTrue(usedCar.chennaiUsedCars.isDisplayed(), "Element is not visible.");
     	if (usedCar.chennaiUsedCars.isDisplayed()) {
 
 			Assert.assertTrue(true);
@@ -91,10 +83,8 @@ public class step2_UsedCars extends BaseClass{
         try {
         	
             logger.info("Selecting Chennai used cars");
-//            Thread.sleep(5000);
             
             usedCar.selectChennaiUsedCars();
-//            Thread.sleep(8000);
         } catch (IOException e) {
             logger.error("Failed to select Chennai used cars!!!");
             e.printStackTrace();
@@ -109,9 +99,7 @@ public class step2_UsedCars extends BaseClass{
         try {
         	
             logger.info("Checking that the popular models are displayed");
-//            Thread.sleep(5000);
             usedCar.extractPopularModels();
-//            Thread.sleep(5000);
         } catch (Exception e) {
             logger.error("Failed to display the popular models!!!");
             e.printStackTrace();

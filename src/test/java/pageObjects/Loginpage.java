@@ -39,28 +39,23 @@ public class Loginpage extends BasePage {
 	}
 	
 	public void clickLoginSignUp() throws InterruptedException {
-//		Thread.sleep(6000);
 		loginSignUpButton.click();
 		 
 	}
 	
 	public void selectGoogleButton() throws InterruptedException {
 		loginWithGoogleButton.click();
-//		Thread.sleep(8000);
 	}
 	
 	public void setEmailInput() throws InterruptedException {
-//		Thread.sleep(6000);
 		emailInput.sendKeys(RandomStringUtils.randomAlphabetic(5)+ "@gmail.com");//RandomStringUtils.randomAlphabetic(5) + "@gmail.com"
 	}
 	
 	public void clickNextButton() throws InterruptedException {
 		nextbutton.click();
-//		Thread.sleep(5000);
 	}
 	//Capturing Error message
 	public void captureErrorMsg() throws IOException, InterruptedException {
-//		Thread.sleep(10000);
 		String errorMsg = errorMessage.getText();
 		System.out.println("-----------------------");
 		System.out.println(errorMsg);
