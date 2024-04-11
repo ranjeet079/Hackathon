@@ -29,7 +29,7 @@ public class step2_UsedCars extends BaseClass{
             Assert.fail();
         }
     }
-    @When("Zigwheels logo is visible or not")
+    @When("I check if the Zigwheels logo is visible")
     public void logo() throws InterruptedException {
     	logger.info("checking zigwheels visibility");
     	if (usedCar.logo.isDisplayed()) {
@@ -42,7 +42,7 @@ public class step2_UsedCars extends BaseClass{
     }
     
     
-    @Then("used cars option is visible or not")
+    @Then("I verify that the used cars option is visible")
     public void usedCars() throws InterruptedException {
     	logger.info("checking used cars option visibility");
     	if (usedCar.usedCarsMenu.isDisplayed()) {
@@ -54,7 +54,7 @@ public class step2_UsedCars extends BaseClass{
     }
     
 
-    @When("I hover over and select used cars")
+    @When("I hover over the used cars option and select it")
     public void i_hover_over_and_select_used_cars() {
         try {
             logger.info("Hovering over and selecting used cars");
@@ -67,7 +67,7 @@ public class step2_UsedCars extends BaseClass{
         }
     }
 
-    @Then("Chennai option is visible or not")
+    @Then("I verify that the Chennai option is visible")
     public void viewMoreButton() throws InterruptedException {
     	logger.info("checking Chennai option visibility");
     	if (usedCar.chennaiUsedCars.isDisplayed()) {
@@ -93,7 +93,7 @@ public class step2_UsedCars extends BaseClass{
         
     }
 
-    @Then("The popular models should be displayed")
+    @Then("I verify that the popular models are displayed")
     public void the_popular_models_should_be_displayed() throws InterruptedException {
     	Thread.sleep(8000);
         try {
