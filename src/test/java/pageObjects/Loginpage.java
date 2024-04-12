@@ -35,6 +35,7 @@ public class Loginpage extends BasePage {
 	
 	
 	public void gotohome() {
+		explicitWait(zigwheelshome);
 		zigwheelshome.click();
 	}
 	

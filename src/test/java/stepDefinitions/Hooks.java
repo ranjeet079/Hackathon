@@ -29,7 +29,7 @@ public class Hooks {
     	p=BaseClass.getProperties();
     	try {
     		driver.get(p.getProperty("appURL"));
-    		Thread.sleep(5000);
+//    		Thread.sleep(5000);
         } catch (TimeoutException e) {
             System.out.println("Page: " + "https://www.zigwheels.com/" + " did not load within 60 seconds!");
         }

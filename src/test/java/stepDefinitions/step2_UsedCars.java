@@ -95,7 +95,7 @@ public class step2_UsedCars extends BaseClass{
 
     @Then("I verify that the popular models are displayed")
     public void the_popular_models_should_be_displayed() throws InterruptedException {
-    	Thread.sleep(8000);
+//    	Thread.sleep(8000);
         try {
         	
             logger.info("Checking that the popular models are displayed");
