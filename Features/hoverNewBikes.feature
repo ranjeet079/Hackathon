@@ -9,7 +9,7 @@ Feature: Validate the hover function over New bikes
     And selecting Honda brand
     Then ViewMore button is visible or not
 
-  @RegressionTests
+  @smokeTests @regressionTests
   Scenario: Validate bike details display
     Given I am on the bikes page
     Then I should see the names of the bikes

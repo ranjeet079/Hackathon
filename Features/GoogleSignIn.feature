@@ -10,7 +10,7 @@ Feature: Google Sign In
     And I select the Google button
     Then The Login/SignUp card should be displayed
 
-  @RegressionTests
+  @RegressionTests @SmokeTests 
   Scenario: Verify Google Login
     Given I am on the Google Accounts sign in page
     When I enter my email

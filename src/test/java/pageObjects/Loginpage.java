@@ -24,7 +24,8 @@ public class Loginpage extends BasePage {
 	//@FindBy(xpath=" //*[@id=\"yDmH0d\"]/c-wiz/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/div")//#identifierId                   
 	//public WebElement emailInput;
 	
-	@FindBy(id="identifierId")//#identifierId
+//	@FindBy(id="identifierId")//#identifierId
+	@FindBy(name="identifier")//#identifierId
 	public WebElement emailInput;
 	
 	@FindBy(xpath = "//span[normalize-space()='Next']")
@@ -49,6 +50,7 @@ public class Loginpage extends BasePage {
 	}
 	
 	public void setEmailInput() throws InterruptedException {
+//		explicitWait(emailInput);
 		emailInput.sendKeys(RandomStringUtils.randomAlphabetic(5)+ "@gmail.com");//RandomStringUtils.randomAlphabetic(5) + "@gmail.com"
 	}
 	
