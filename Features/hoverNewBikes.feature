@@ -1,7 +1,7 @@
 Feature: Validate the hover function over New bikes
 
   @smokeTests @regressionTests
-  Scenario: Validate the hover function over New bikes
+  Scenario: Validate the upcoming bikes function over New bikes
     Given I open the website Zigwheels.com
     When I select upcoming bikes
     Then Redirected to upcoming bikes page
